@@ -1,9 +1,9 @@
-#import Pkg; 
-#Pkg.add("DataFrames");
-#Pkg.add("CSV");
+import Pkg; 
+Pkg.add("DataFrames");
+Pkg.add("CSV");
 #Pkg.add("Plots");
-#Pkg.precompile();
-using DataFrames, CSV, Plots
+Pkg.precompile();
+using DataFrames, CSV#, Plots
 function readcsv() # leitura do csv
     path = "data.csv"
     dataframe = DataFrame(CSV.File(path))
